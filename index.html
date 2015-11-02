@@ -32,6 +32,7 @@ var App = angular.module('myApp', []);
 
 function myCtrl($scope, $http) {
     $scope.loadData = function () {
+      console.log("loadData");
         var httpRequest = $http({
             method: 'POST',
             url: '/echo/json/',
