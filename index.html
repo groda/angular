@@ -59,10 +59,10 @@ function myCtrl($scope, $http) {
     </section>
 
     <section class="main-content">
-     
+      
      <div ng-app='myApp'>
      <div ng-controller='myCtrl'>
-        
+        <button ng-click="loadData()">load JSON</button>   
      <h1>Data</h1> 
         <div ng-repeat="item in items">
              <h2>{{item.field1}}</h2>
@@ -75,7 +75,7 @@ function myCtrl($scope, $http) {
         </div>
     </div>
 </div> 
- <button ng-click="loadData()">load JSON</button>     
+  
   
       
       <footer class="site-footer">
