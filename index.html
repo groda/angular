@@ -39,6 +39,8 @@ function myCtrl($scope, $http) {
         }).success(function (data, status) {
             $scope.items = data;
             console.log("success")
+        }).error(function (err) {
+            console.log(err);
         });
 
     };
